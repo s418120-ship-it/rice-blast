@@ -26,7 +26,7 @@ let stream = null;
 let animationId = null;
 let isRunningCamera = false;
 let lastInferTime = 0;
-const INFER_INTERVAL_MS = 120; // 數值越小越即時，但手機負擔越重
+const INFER_INTERVAL_MS = 50; // 數值越小越即時，但手機負擔越重
 
 confSlider.addEventListener("input", () => {
   CONF_THRESHOLD = Number(confSlider.value);
